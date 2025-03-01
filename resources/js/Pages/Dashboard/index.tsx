@@ -26,6 +26,7 @@ const Dashboard: React.FC = () => {
 
         router.post(route("todo.create"), { title, description });
         fetchTodos();
+        e.currentTarget.reset();
     };
 
     const fetchTodos = async () => {
